@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2em 0em;
+    max-width: 2200px;
+    height: 15%;
+    margin: 0 auto;
+}
+
+.logo-ham {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4em;
+    width: 100%;
+}
+
+.logo {
+    margin-right: auto;
+    width: 100px;
+}
+
+.nav-links {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    width: 500px;
+    justify-content: space-between;
+} 
+
+.nav-links li {
+    display: inline-block;
+}
+
+li a:link {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+li a:hover {
+    color: rgb(148, 148, 148);
+}
+
+li a:visited {
+    color: #4A4A4A;
+}
+
+@media(max-width: 900px) {
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: #4A4A4A;
+        margin: 5px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    nav {
+        height: 10%;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 10%;
+        height: 90%;
+        width: 100%;
+        flex-direction: column;
+        pointer-events: none;
+        opacity: 0;
+        justify-content: flex-start;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links li:first-of-type {
+        margin-top: 100px;
+    }
+    
+    .nav-links.open {
+        pointer-events: all;
+        opacity: 1;
+        background: #4A4A4A;
+    }
+
+    .logo-ham {
+        padding: 0 2em;
+    }
+
+    li a:link {
+        color: white;
+    }
+    
+    li a:hover {
+        color: rgb(148, 148, 148);
+    }
+    
+    li a:visited {
+        color: white;
+    }
+}
