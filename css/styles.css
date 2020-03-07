@@ -126,6 +126,11 @@ li a:visited {
         pointer-events: none;
         opacity: 0;
         justify-content: flex-start;
+        overflow: auto;
+    }
+
+    .social-links {
+        margin-bottom: 100px;
     }
 
     .line {
