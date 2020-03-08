@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,6 +11,8 @@
 
 li, a, button {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 nav {
@@ -20,9 +23,9 @@ nav {
     top:0;
     left: 0;
     right: 0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 2em 0em;
+    padding: 2rem 0rem;
     max-width: 2200px;
     margin: 0 auto;
     background: white;
@@ -30,11 +33,10 @@ nav {
 }
 
 body {
-    margin-top: 200px;
+    margin-top: 400px;
 }
 
 li a:link {
-    text-decoration: none;
     color: #4A4A4A;
 }
 
@@ -53,7 +55,7 @@ li a:visited {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 4em;
+    padding: 0 4rem;
     width: 100%;
 }
 
@@ -69,7 +71,6 @@ li a:visited {
 
 .nav-links {
     align-items: center;
-    list-style-type: none;
     display: flex;
     height: 100%;
     width: 500px;
@@ -84,24 +85,113 @@ li a:visited {
     display: inline-flex;
     background-color: #8D8D8D;
     border: none;
-    padding: .2em;
+    padding: .2rem;
     margin: 4px 2px;
     border-radius: 4px;
   }
 
 .social-links svg {
-    width: 2em;
+    width: 2rem;
     fill: white;    
+}
+
+.projects {
+    /* background: green; */
+    display: flex;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    /* background: orange; */
+    width: 30%;
+    align-items: center;
+}
+
+.titles {
+    width: 70%;
+}
+
+.titles li {
+    padding: 3rem;
+    height: 6rem;
+    /* background: gray; */
+    border-left: 5px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #4A4A4A;
+}
+
+.titles li:hover {
+    border-left: 5px solid #595959;
+}
+
+.current {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    height: 6rem;
+    margin-bottom: 2.5rem;
+}
+
+.current.project {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-left: 5px solid #DDDDDD;
+    color: #4A4A4A;
+}
+
+.current.project:hover {
+    border-left: 5px solid #595959;
+}
+
+.current, .previous {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.previous {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* background: red; */
+    padding: 1rem;
+}
+
+.project-title {
+    font-family: 'Permanent Marker';
+    font-size: 2rem;
+}
+
+.project-company {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 @media(max-width: 900px) {
 
 
     /* TAG SELECTORS */
+    :root {
+        font-size: 62.5%;
+      }
+      
+    body {
+        margin-top: 200px;
+    }
 
     nav {
         min-height: 100px;
         padding: 0;
+        font-size: 2rem;
     }
 
     li a:link {
@@ -116,9 +206,7 @@ li a:visited {
         color: white;
     }
 
-    body {
-        margin-top: 100px;
-    }
+
     
 
     /* CLASS SELECTORS */
@@ -187,7 +275,16 @@ li a:visited {
     }
 
     .nav-container {
-        padding: 0 2em;
+        padding: 0 2rem;
     }
+
+    .projects {
+        max-width: 400px;
+    }
+
+    .social-links svg {
+        width: 5rem;
+    }
+    
 
 }
