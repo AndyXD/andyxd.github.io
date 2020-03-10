@@ -257,6 +257,14 @@ nav.nav-shrink {
 }
 
 
+@media(max-width: 1920px) {
+    .project-container {
+        margin-top: 10%;
+    }
+    
+}
+
+
 @media(max-width: 900px) {
 
 
