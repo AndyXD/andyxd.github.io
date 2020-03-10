@@ -28,7 +28,7 @@ nav {
     padding: 2rem 0rem;
     background: white;
     min-height: 200px;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     width: 100vw;
 }
 
@@ -126,12 +126,13 @@ nav.nav-shrink {
     background-color: #C4C4C4;
 }
 
+/* index */
 .projects {
     /* background: green; */
     display: flex;
     margin: 0 auto;
     max-width: 700px;
-    margin-top: 13%;
+    margin-top: 18rem;
 }
 
 .time {
@@ -208,11 +209,12 @@ nav.nav-shrink {
     font-weight: bold;
 }
 
+/* about */
 .about {
     margin: 0 auto;
     max-width: 600px;
     font-size: 1.2rem;
-    margin-top: 13%;
+    margin-top: 18rem;
 }
 
 .resume {
@@ -232,11 +234,13 @@ nav.nav-shrink {
     border: 2px solid transparent;
 }
 
+/* indv projects */
 .project-container {
     margin: 0 auto;
     max-width: 700px;
     font-size: 1.2rem;
-    margin-top: 5%;
+    margin-top: 10rem;
+    padding: 0 2.5rem 4rem 2.5rem;
 }
 
 .project-header {
@@ -257,12 +261,12 @@ nav.nav-shrink {
 }
 
 
-@media(max-width: 1920px) {
+/* @media(max-width: 1920px) {
     .project-container {
-        margin-top: 10%;
+        margin-top: 1rem;
     }
     
-}
+} */
 
 
 @media(max-width: 900px) {
@@ -295,10 +299,6 @@ nav.nav-shrink {
     
 
     /* CLASS SELECTORS */
-
-    .project-container {
-        padding: 0 2.5rem;
-    }
 
     .nav-links {
         position: fixed;
