@@ -261,7 +261,26 @@ nav.nav-shrink {
     margin: 0.5rem 0 2rem 1.3rem;
 }
 
+.highlights li {
+    margin: 0 0 1rem 0;
+}
 
+.hyperlinks {
+    color: #00A3C7 !important;
+    font-weight: bold;
+}
+
+.hyperlinks:hover {
+    color: #005F74 !important;
+    font-weight: bold;
+}
+/*
+
+.hyperlinks:visited {
+    color: #00A3C7;
+    font-weight: bold;
+}
+*/
 /* @media(max-width: 1920px) {
     .project-container {
         margin-top: 1rem;
